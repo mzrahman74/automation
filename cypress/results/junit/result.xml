@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2021-06-11T03:00:58" tests="2" file="cypress/integration/first-test.spec.js" time="10.5720" failures="0">
+  
+  <testcase name="tooltip" time="6.5840" classname="tooltip"/>
+  
+  <testcase name="Alert" time="3.9880" classname="Alert"/>
+  
+</testsuite>
+<testsuite name="Selector tests" timestamp="2021-06-11T03:01:09" tests="9" time="41.4710" failures="0">
+  
+  <testcase name="Selector tests Selector selection" time="3.5590" classname="Selector selection"/>
+  
+  <testcase name="Selector tests second test" time="3.5580" classname="second test"/>
+  
+  <testcase name="Selector tests then and wrap methods" time="3.0530" classname="then and wrap methods"/>
+  
+  <testcase name="Selector tests Invoke command" time="3.1320" classname="Invoke command"/>
+  
+  <testcase name="Selector tests assert property" time="4.2270" classname="assert property"/>
+  
+  <testcase name="Selector tests radio button" time="3.7100" classname="radio button"/>
+  
+  <testcase name="Selector tests check boxes" time="3.5500" classname="check boxes"/>
+  
+  <testcase name="Selector tests list and dropdown" time="3.6280" classname="list and dropdown"/>
+  
+  <testcase name="Selector tests Web tables" time="13.0540" classname="Web tables"/>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2021-06-11T03:00:58" tests="2" file="cypress/integration/first-test.spec.js" time="10.5720" failures="0">
+  
+  <testcase name="tooltip" time="6.5840" classname="tooltip"></testcase>
+  
+  <testcase name="Alert" time="3.9880" classname="Alert"></testcase>
+  
+</testsuite>
+<testsuite name="Selector tests" timestamp="2021-06-11T03:01:09" tests="9" time="41.4710" failures="0">
+  
+  <testcase name="Selector tests Selector selection" time="3.5590" classname="Selector selection"></testcase>
+  
+  <testcase name="Selector tests second test" time="3.5580" classname="second test"></testcase>
+  
+  <testcase name="Selector tests then and wrap methods" time="3.0530" classname="then and wrap methods"></testcase>
+  
+  <testcase name="Selector tests Invoke command" time="3.1320" classname="Invoke command"></testcase>
+  
+  <testcase name="Selector tests assert property" time="4.2270" classname="assert property"></testcase>
+  
+  <testcase name="Selector tests radio button" time="3.7100" classname="radio button"></testcase>
+  
+  <testcase name="Selector tests check boxes" time="3.5500" classname="check boxes"></testcase>
+  
+  <testcase name="Selector tests list and dropdown" time="3.6280" classname="list and dropdown"></testcase>
+  
+  <testcase name="Selector tests Web tables" time="13.0540" classname="Web tables"></testcase>
+  
+</testsuite>
+
+</testsuites>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="60.7070" tests="11" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-13T22:16:11" tests="2" file="cypress/integration/first-test.spec.js" time="12.6960" failures="0">
+    <testcase name="tooltip" time="6.9260" classname="tooltip">
+    </testcase>
+    <testcase name="Alert" time="5.7700" classname="Alert">
+    </testcase>
+  </testsuite>
+  <testsuite name="Selector tests" timestamp="2021-06-13T22:16:23" tests="9" time="48.0110" failures="0">
+    <testcase name="Selector tests Selector selection" time="4.0220" classname="Selector selection">
+    </testcase>
+    <testcase name="Selector tests second test" time="3.0440" classname="second test">
+    </testcase>
+    <testcase name="Selector tests then and wrap methods" time="2.7800" classname="then and wrap methods">
+    </testcase>
+    <testcase name="Selector tests Invoke command" time="3.0890" classname="Invoke command">
+    </testcase>
+    <testcase name="Selector tests assert property" time="4.6520" classname="assert property">
+    </testcase>
+    <testcase name="Selector tests radio button" time="4.7170" classname="radio button">
+    </testcase>
+    <testcase name="Selector tests check boxes" time="6.3290" classname="check boxes">
+    </testcase>
+    <testcase name="Selector tests list and dropdown" time="4.7560" classname="list and dropdown">
+    </testcase>
+    <testcase name="Selector tests Web tables" time="14.6220" classname="Web tables">
+    </testcase>
+  </testsuite>
+</testsuites>

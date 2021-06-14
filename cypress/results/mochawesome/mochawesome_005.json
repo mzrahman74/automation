@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-13T23:06:24.997Z",
+    "end": "2021-06-13T23:06:45.399Z",
+    "duration": 20402,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "69340f7e-3f62-45d5-946f-599bddd611e0",
+      "title": "",
+      "fullFile": "cypress/integration/testWithPageObject.spec.js",
+      "file": "cypress/integration/testWithPageObject.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "838cbcbf-21a9-4964-99cf-86f18b64a0ad",
+          "title": "Test with Page Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should submit Inline and Basic form and select tomorrow date in the calendar",
+              "fullTitle": "Test with Page Object should submit Inline and Basic form and select tomorrow date in the calendar",
+              "timedOut": null,
+              "duration": 20367,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_navigationPage.navigateTo.formLayoutPage();\n_formLayoutsPage.onFormLayoutsPage.submitInlineFormWithNameAndEmail(\"Mohammad\", \"test@test.com\");\n_formLayoutsPage.onFormLayoutsPage.submitBasicFormWithEmailAndPassword(\"test@test.com\", \"password\");\n_navigationPage.navigateTo.smartTablePage();\n_smartTablePage.onSmartTablePage.addNewRecordWithFirstAndLastNane(\"Mohammad\", \"Rahman\");\n_smartTablePage.onSmartTablePage.updateAgeByFirstNane(\"Mohammad\", 47);\n_smartTablePage.onSmartTablePage.deleteRowbyIndex(1);",
+              "err": {},
+              "uuid": "91dfccf7-9689-4b02-b085-bae124002305",
+              "parentUUID": "838cbcbf-21a9-4964-99cf-86f18b64a0ad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "91dfccf7-9689-4b02-b085-bae124002305"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20367,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

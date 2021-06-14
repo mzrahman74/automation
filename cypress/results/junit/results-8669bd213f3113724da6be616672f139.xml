@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.3670" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-13T23:06:25" tests="0" file="cypress/integration/testWithPageObject.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with Page Object" timestamp="2021-06-13T23:06:25" tests="1" time="20.3670" failures="0">
+    <testcase name="Test with Page Object should submit Inline and Basic form and select tomorrow date in the calendar" time="20.3670" classname="should submit Inline and Basic form and select tomorrow date in the calendar">
+    </testcase>
+  </testsuite>
+</testsuites>
