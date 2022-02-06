@@ -1,0 +1,342 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 11,
+    "passes": 0,
+    "pending": 0,
+    "failures": 11,
+    "start": "2022-02-03T03:24:03.433Z",
+    "end": "2022-02-03T03:24:12.392Z",
+    "duration": 8959,
+    "testsRegistered": 11,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "69262748-4795-4552-9ad3-419cf596857d",
+      "title": "",
+      "fullFile": "cypress/integration/first-test.spec.js",
+      "file": "cypress/integration/first-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "tooltip",
+          "fullTitle": "tooltip",
+          "timedOut": null,
+          "duration": 779,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"/\");\ncy.contains(\"Modal & Overlays\").click();\ncy.contains(\"Tooltip\").click();\ncy.contains(\"nb-card\", \"Colored Tooltips\").contains(\"Default\").click();\ncy.get(\"nb-tooltip\").should(\"contain\", \"This is a tooltip\");",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:319:6)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+            "diff": null
+          },
+          "uuid": "d2c9e38c-4ff5-40cb-92c9-9e7cec0e66ae",
+          "parentUUID": "69262748-4795-4552-9ad3-419cf596857d",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Alert",
+          "fullTitle": "Alert",
+          "timedOut": null,
+          "duration": 718,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"/\");\ncy.contains(\"Tables & Data\").click();\ncy.contains(\"Smart Table\").click(); // 3 - cancel\ncy.get(\"tbody tr\").first().find(\".nb-trash\").click();\ncy.on(\"window:confirm\", () => false); // //1- accept\n// cy.get(\"tbody tr\").eq(1).find(\".nb-trash\").click();\n// cy.on(\"window:confirm\", (confirm) => {\n//   expect(confirm).to.equal(\"Are you sure you want to delete?\");\n// });\n// // 2 - accept\n// const stub = cy.stub();\n// cy.on(\"window:confirm\", (confirm) => {\n//   cy.get(\"tbody tr\")\n//     .first()\n//     .find(\".nb-trash\")\n//     .click()\n//     .then(() => {\n//       expect(stub.getCall(0)).to.be.calledWith(\n//         \"Are you sure you want to delete?\"\n//       );\n//     });\n// });",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:326:6)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+            "diff": null
+          },
+          "uuid": "d4cf52f0-bbb4-4ae1-a363-6b76f0ec76a0",
+          "parentUUID": "69262748-4795-4552-9ad3-419cf596857d",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+          "title": "Selector tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Selector selection",
+              "fullTitle": "Selector tests Selector selection",
+              "timedOut": null,
+              "duration": 697,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Forms\").click();\ncy.contains(\"Form Layouts\").click(); // Search by tag\ncy.get(\"input\"); // by id\ncy.get(\"#inputEmail1\"); // by class name\ncy.get(\".input-full-width\"); // by Attribute name\ncy.get(\"[placeholder]\"); // by Attribute name and value\ncy.get('[placeholder=\"Email\"]'); // by class value\ncy.get('[class=\"input-full-width size-medium shape-rectangle\"]'); //by tag name and Attribute with value\ncy.get('input[placeholder=\"Email\"]'); // by two different attribute\ncy.get('[placeholder=\"Email\"]#inputEmail1.input-full-width'); // by tag name, attribute with value id and class name\ncy.get('input[placeholder=\"Email\"]#inputEmail1.input-full-width'); // The most recommended way by cypress\n//cy.get('[data-cy=\"inputEmail\"]')",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:102:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "4ed1c2d5-a3cd-49d4-b04f-cb9f4b22fc96",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "second test",
+              "fullTitle": "Selector tests second test",
+              "timedOut": null,
+              "duration": 681,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Forms\").click();\ncy.contains(\"Form Layouts\").click(); //cy.get('[data-cy=\"signInButton\"]')\ncy.contains('[status=\"warning\"]', \"Sign in\"); //Travel to the dom -- Parents and child\ncy.get(\"#inputEmail3\").parents(\"form\").find(\"button\").should(\"contain\", \"Sign in\").parents(\"form\").find(\"nb-checkbox\").click();\ncy.contains(\"nb-card\", \"Horizontal form\").find('[type=\"email\"]');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:126:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "2f0f19ce-4fdc-4cfb-95af-774455354a59",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "then and wrap methods",
+              "fullTitle": "Selector tests then and wrap methods",
+              "timedOut": null,
+              "duration": 824,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Forms\").click();\ncy.contains(\"Form Layouts\").click(); // find label\n// cy.contains(\"nb-card\", \"Using the Grid\")\n//   .find('[for=\"inputEmail1\"]')\n//   .should(\"contain\", \"Email\");\n// cy.contains(\"nb-card\", \"Using the Grid\")\n//   .find('[for=\"inputPassword2\"]')\n//   .should(\"contain\", \"Password\");\n// cy.contains(\"nb-card\", \"Basic form\")\n//   .find('[for=\"exampleInputEmail1\"]')\n//   .should(\"contain\", \"Email address\");\n// cy.contains(\"nb-card\", \"Basic form\")\n//   .find('[for=\"exampleInputPassword1\"]')\n//   .should(\"contain\", \"Password\");\n// Selenium\n// const firstForm = cy.contains(\"nb-card\", \"Using the Grid\");\n// const secondForm = cy.contains(\"nb-card\", \"Basic form\");\n// firstForm.find('[for=\"inputEmail1\"]').should(\"contain\", \"Email\");\n// firstForm.find('[for=\"inputPassword2\"]').should(\"contain\", \"Password\");\n// secondForm\n//   .find('[for=\"exampleInputPassword1\"]')\n//   .should(\"contain\", \"Password\");\n// cypress style\ncy.contains(\"nb-card\", \"Using the Grid\").then(firstForm => {\n  const emailLabelFirst = firstForm.find('[for=\"inputEmail1\"]').text();\n  const passwordLabelFirst = firstForm.find('[for=\"inputPassword2\"]').text();\n  expect(emailLabelFirst).to.equal(\"Email\");\n  expect(passwordLabelFirst).to.equal(\"Password\");\n  cy.contains(\"nb-card\", \"Basic form\").then(secondForm => {\n    const emailLabelSecond = secondForm.find('[for=\"exampleInputEmail1\"]').text();\n    const passwordLabelSecond = secondForm.find('[for=\"exampleInputPassword1\"]').text();\n    expect(passwordLabelFirst).to.equal(passwordLabelSecond);\n    cy.wrap(secondForm).find('[for=\"exampleInputEmail1\"]').should(\"contain\", \"Email address\");\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:136:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "0e8905d2-300e-4add-8b01-3720cbca4eb4",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invoke command",
+              "fullTitle": "Selector tests Invoke command",
+              "timedOut": null,
+              "duration": 757,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Form\").click();\ncy.contains(\"Form Layouts\").click(); //1\ncy.get(\"[for=exampleInputEmail1\").should(\"contain\", \"Email address\").should(\"have.class\", \"label\").and(\"have.text\", \"Email address\"); // 2\ncy.get('[for=\"exampleInputEmail1\"]').then(lable => {\n  expect(lable.text()).to.equal(\"Email address\");\n  expect(lable).to.have.class(\"label\");\n  expect(lable).to.have.text(\"Email address\"); // 3\n  cy.get('[for=\"exampleInputEmail1\"]').invoke(\"text\").then(text => {\n    expect(text).to.equal(\"Email address\");\n  });\n  cy.contains(\"nb-card\", \"Basic form\").find(\"nb-checkbox\").click().find(\".custom-checkbox\").invoke(\"attr\", \"class\") //.should(\"contain\", \"checked\");\n  .then(classValue => {\n    expect(classValue).to.contain(\"checked\");\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:175:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "ac6e5780-4190-4b35-bc91-0884316b0211",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "assert property",
+              "fullTitle": "Selector tests assert property",
+              "timedOut": null,
+              "duration": 987,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Form\").click();\ncy.contains(\"Datepicker\").click();\nlet date = new Date();\ndate.setDate(date.getDate() + 5);\nlet futureDay = date.getDate();\nlet futureMonth = date.toLocaleDateString(\"default\", {\n  month: \"short\"\n});\ncy.contains(\"nb-card\", \"Common Datepicker\").find(\"input\").then(input => {\n  cy.wrap(input).click();\n  cy.get(\"nb-calendar-navigation\").invoke(\"attr\", \"ng-reflect-date\").then(dateAttribute => {\n    if (!dateAttribute.includes(futureMonth)) {\n      cy.get('[data-name=\"chevron-righ\"]').click();\n      cy.get('nb-calendar-day-picker [class=\"day-cell ng-star-inserted\"]').contains(futureDay).click();\n    } else {\n      cy.get('nb-calendar-day-picker [class=\"day-cell ng-star-inserted\"]').contains(futureDay).click();\n    }\n  }); // cy.get(\"nb-calendar-day-picker\").contains(\"17\").click();\n  // cy.wrap(input)\n  //   .invoke(\"prop\", \"value\")\n  //   .should(\"contain\", \"May 17, 2021\");\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:196:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "cbf68d38-bccf-4dd8-9320-478c3e7299d4",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "radio button",
+              "fullTitle": "Selector tests radio button",
+              "timedOut": null,
+              "duration": 788,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Forms\").click();\ncy.contains(\"Form Layout\").click();\ncy.contains(\"nb-card\", \"Using the Grid\").find('[type=\"radio\"]').then(radioButtons => {\n  cy.wrap(radioButtons).first().check({\n    force: true\n  }).should(\"be.checked\");\n  cy.wrap(radioButtons).eq(1).check({\n    force: true\n  });\n  cy.wrap(radioButtons).eq(0).should(\"not.be.checked\");\n  cy.wrap(radioButtons).eq(2).should(\"be.disabled\");\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:221:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "f014b285-a87f-4d9c-b707-324ad3e2f0c6",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check boxes",
+              "fullTitle": "Selector tests check boxes",
+              "timedOut": null,
+              "duration": 818,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Modal & Overlays\").click();\ncy.contains(\"Toastr\").click();\ncy.get('[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('[type=\"checkbox\"]').eq(0).click({\n  force: true\n});\ncy.get('[type=\"checkbox').eq(1).check({\n  force: true\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:236:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "7451a2b9-6f79-4abb-abee-35fbe4b04990",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "list and dropdown",
+              "fullTitle": "Selector tests list and dropdown",
+              "timedOut": null,
+              "duration": 790,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\"); //1\n// cy.get(\"nav nb-select\").click();\n// cy.get(\".options-list\").contains(\"Dark\").click();\n// cy.get('nav nb-select').should('contain', 'Dark')\n// cy.get(\"nb-layout-header nav\").should(\n//   \"have.css\",\n//   \"background-color\",\n//   \"rgb(34, 43, 69)\"\n//2\ncy.get(\"nav nb-select\").then(dropdown => {\n  cy.wrap(dropdown).click();\n  cy.get(\".options-list nb-option\").each((listItem, index) => {\n    const itemText = listItem.text().trim();\n    const colors = {\n      Light: \"rgb(255, 255, 255)\",\n      Dark: \"rgb(34, 43, 69)\",\n      Cosmic: \"rgb(50, 50, 89)\",\n      Corporate: \"rgb(255, 255, 255)\"\n    };\n    cy.wrap(listItem).click();\n    cy.wrap(dropdown).should(\"contain\", itemText);\n    cy.get(\"nb-layout-header nav\").should(\"have.css\", \"background-color\", colors[itemText]); //cy.wrap(dropdown).click();\n    if (index < 3) {\n      cy.wrap(dropdown).click();\n    }\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:250:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "ab9695b6-12ab-401c-88db-d6fff48c4217",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Web tables",
+              "fullTitle": "Selector tests Web tables",
+              "timedOut": null,
+              "duration": 754,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.contains(\"Tables & Data\").click();\ncy.contains(\"Smart Table\").click(); // 1\ncy.get(\"tbody\").contains(\"tr\", \"Larry\").then(tableRow => {\n  cy.wrap(tableRow).find(\".nb-edit\").click();\n  cy.wrap(tableRow).find('[placeholder=\"Age\"]').clear().type(\"25\");\n  cy.wrap(tableRow).find(\".nb-checkmark\").click();\n  cy.wrap(tableRow).find(\"td\").eq(6).should(\"contain\", \"25\");\n}); // 2\ncy.get(\"thead\").find(\".nb-plus\").click();\ncy.get(\"thead\").find(\"tr\").eq(2).then(tableRow => {\n  cy.wrap(tableRow).find('[placeholder=\"First Name\"]').type(\"Mohammad\");\n  cy.wrap(tableRow).find('[placeholder=\"Last Name\"]').type(\"Rahman\");\n  cy.wrap(tableRow).find(\".nb-checkmark\").click();\n});\ncy.get(\"tbody tr\").first().find(\"td\").then(tableColums => {\n  cy.wrap(tableColums).eq(2).should(\"contain\", \"Mohammad\");\n  cy.wrap(tableColums).eq(3).should(\"contain\", \"Rahman\");\n}); // 3\n// cy.get('input[placeholder=\"Age\"]').type(\"20\");\nconst age = [20, 30, 40, 200];\ncy.wrap(age).each(age => {\n  cy.get('thead [placeholder=\"Age\"]').clear().type(age);\n  cy.wait(500);\n  cy.get(\"tbody tr\").each(tableRow => {\n    if (age == 200) {\n      cy.wrap(tableRow).should(\"contain\", \"No data found\");\n    } else {\n      cy.wrap(tableRow).find(\"td\").eq(6).should(\"contain\", age);\n    }\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158279:82\n    at visitFailedByErr (http://localhost:4200/__cypress/runner/cypress_runner.js:157632:12)\n    at http://localhost:4200/__cypress/runner/cypress_runner.js:158278:11\n    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/first-test.spec.js:281:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)\n  ",
+                "diff": null
+              },
+              "uuid": "fa604594-6c42-409e-a8fd-64d5e72cfa05",
+              "parentUUID": "9bc5af36-02c1-4a64-b8cd-8a74042a4d00",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4ed1c2d5-a3cd-49d4-b04f-cb9f4b22fc96",
+            "2f0f19ce-4fdc-4cfb-95af-774455354a59",
+            "0e8905d2-300e-4add-8b01-3720cbca4eb4",
+            "ac6e5780-4190-4b35-bc91-0884316b0211",
+            "cbf68d38-bccf-4dd8-9320-478c3e7299d4",
+            "f014b285-a87f-4d9c-b707-324ad3e2f0c6",
+            "7451a2b9-6f79-4abb-abee-35fbe4b04990",
+            "ab9695b6-12ab-401c-88db-d6fff48c4217",
+            "fa604594-6c42-409e-a8fd-64d5e72cfa05"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7096,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [
+        "d2c9e38c-4ff5-40cb-92c9-9e7cec0e66ae",
+        "d4cf52f0-bbb4-4ae1-a363-6b76f0ec76a0"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 1497,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
